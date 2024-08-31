@@ -3,11 +3,18 @@ import org.testng.annotations.Test;
 import genericLibrary.Base_Class;
 import pomRepository.HomePage;
 import tataPlay.BaseClass;
+
+
+
 	
 public class Selfcare_001Test extends Base_Class {
+
 	@Test
 	public void sampleTest() throws Throwable {
+
 		HomePage homePage = new HomePage(driver);
+
+		
 //		WebElement okGotIt = homePage.getOkayGotitLink();
 //		wlib.waitForElemnetToBeClickable(driver, okGotIt);
 		Thread.sleep(30000);
@@ -52,6 +59,7 @@ public class Selfcare_001Test extends Base_Class {
 		homePage.getConfirmationButton().click();
 		Thread.sleep(3000);
 		BaseClass.baseclass(driver);
+		
 	}
 }
-//Test....
+
